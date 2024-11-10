@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Quadrados</title>
+    <style>
+        
+        body {
+            background-image: url(imagens/wallpaper006.jpg);
+        }
+        /* Estilo comum para todos os quadrados */
+        div.quadrado {
+            display: inline-block; /* Coloca os quadrados lado a lado */
+            border: 2px solid black; /* Borda preta */
+            border-radius: 10px; /* Bordas arredondadas */
+            width: 300px; /* Largura de 300px */
+            height: 300px; /* Altura de 300px */
+            margin: 10px; /* Espaço entre os quadrados */
+        }
+
+        /* Estilo para o quadrado com ID q1 */
+        div#q1 {
+            background-color: rgb(102, 146, 163); /* Cor sólida de fundo (azul claro) */
+        }
+
+        /* Estilo para o quadrado com ID q2 */
+        div#q2 {
+            background-image: linear-gradient(to bottom, rgb(0, 225, 255), rgb(0, 81, 255)); /* Gradiente de amarelo para laranja */
+        }
+
+        /* Estilo para o quadrado com ID q3 */
+        div#q3 {
+            background-image: url('imagens/pattern001.png'); /* Imagem de fundo */
+            background-size: cover; /* Faz a imagem cobrir todo o quadrado */
+            background-position: center; /* Centraliza a imagem */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Quadrados</h1>
+
+    <!-- Quadrados com IDs diferentes -->
+    <div id="q1" class="quadrado"></div> <!-- Quadrado azul -->
+    <div id="q2" class="quadrado"></div> <!-- Quadrado com gradiente -->
+    <div id="q3" class="quadrado"></div> <!-- Quadrado com imagem de fundo -->
+
+</body>
+</html>

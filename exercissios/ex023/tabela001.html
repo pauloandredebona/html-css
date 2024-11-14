@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;   
+        }
+
+        tr.linha {
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>primeira tabela</h1>
+    <!--
+    table = tabela
+    table row = linha de tabela
+    table header = cabeçalho de tabela
+    table data = dado de tabela
+    -->
+    <table>
+        <tr>
+            <td>a1</td>
+            <td class="numero">b1</td>
+            <td>c1</td>
+        </tr>
+        <tr class="linha">
+            <td>a2</td>
+            <td class="numero">b2</td>
+            <td>c2</td>
+        </tr>
+        <tr>
+           <td>a3</td>
+           <td class="numero">b3</td>
+           <td>c3</td>
+        </tr>
+        <tr class="linha">
+           <td>a4</td>
+           <td class="numero">b4</td>
+           <td>c4</td>
+        </tr>
+        <tr>
+            <td>a5</td>
+            <td class="numero">b5</td>
+            <td>c5</td>
+        </tr>
+        <tr class="linha">
+            <td>a6</td>
+            <td class="numero">b6</td>
+            <td>c6</td>
+        </tr>
+        <tr>
+            <td>a7</td>
+            <td colspan="numero">b7</td>
+            <td>c7</td>
+        </tr>
+        <tr class="linha">
+            <td>a8</td>
+            <td class="numero">b8</td>
+            <td>c8</td>
+        </tr>
+        <tr>
+            <td>a9</td>
+            <td class="numero">b9</td>
+            <td>c9</td>
+        </tr>
+    </table>
+</body>
+</html>

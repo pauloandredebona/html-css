@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+             <tr>
+                 <th rowspanpan="2">area</th>
+                 <th rowspanspan="2">disciplinas</th>
+                 <th colspanspan="">notas</th>
+                 <th>nota 1</th>
+                 <th>nota 2</th>
+                 <th rowspanspan="2">media</th>
+             </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">extas</th>
+                <td>matematica</td>
+                <td>7.4</td>
+                <td>8.9</td>
+                <td>8.15</td>
+            </tr>
+            <tr>
+                <td>fisica</td>
+                <td>5.9</td>
+                <td>9.9</td>
+                <td>7.9</td>
+            </tr>
+            <tr>
+                <td>quimica</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -9,21 +9,53 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        table {
+        h2 {
+            background-color: rgb(158, 158, 158);
             width: 400px;
-            height: 400px;
-            border-collapse: collapse;   
+            height: 60px;
+        }
+
+        table {
+            width: 500px;
+            height: 1000px;
+            border-collapse: collapse;
+            position: relative;
         }
 
         tr.linha {
+            background-color: rgb(199, 199, 199);
+        }
+
+        thead,tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr > th {
+            position: sticky;
+            top: -1px;
             background-color: gray;
         }
 
-        td {
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td, th{
             border: 1px solid black;
-            padding: 8;
-            text-align: left;
+            padding: 8px;
             vertical-align: top;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        th {
+            background-color: grey;
         }
 
         .numero {
@@ -32,53 +64,131 @@
     </style>
 </head>
 <body>
-    <h1>segunda tabela</h1>
+    <h1>tabelas grandes</h1>
     <table>
-        <tr>
-            <td>a1</td>
-            <td class="numero">b1</td>
-            <td>c1</td>
-        </tr>
-        <tr class="linha">
-            <td>a2</td>
-            <td class="numero">b2</td>
-            <td>c2</td>
-        </tr>
-        <tr>
-           <td>a3</td>
-           <td class="numero">b3</td>
-           <td>c3</td>
-        </tr>
-        <tr class="linha">
-           <td>a4</td>
-           <td class="numero">b4</td>
-           <td>c4</td>
-        </tr>
-        <tr>
-            <td>a5</td>
-            <td class="numero">b5</td>
-            <td>c5</td>
-        </tr>
-        <tr class="linha">
-            <td>a6</td>
-            <td class="numero">b6</td>
-            <td>c6</td>
-        </tr>
-        <tr>
-            <td>a7</td>
-            <td colspan="numero">b7</td>
-            <td>c7</td>
-        </tr>
-        <tr class="linha">
-            <td>a8</td>
-            <td class="numero">b8</td>
-            <td>c8</td>
-        </tr>
-        <tr>
-            <td>a9</td>
-            <td class="numero">b9</td>
-            <td>c9</td>
-        </tr>
+        <caption>populaçao das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">estado</th>
+                <th id="populaçao" scope="col" style="width: 100px;">polulaçao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> sao paulo</td>
+                <td class="numero">45 973 190</td>
+            </tr>
+            <tr class="linha">
+                <td> minas gerais</td>
+                <td class="numero">21 322 692</td>
+            </tr>
+            <tr>
+               <td> rio de janeiro</td>
+               <td class="numero">17 219 679</td>
+            </tr>
+            <tr class="linha">
+               <td> bahia</td>
+               <td class="numero">14 850 513</td>
+            </tr>
+            <tr>
+                <td> parana</td>
+                <td class="numero">11 824 665</td>
+            </tr>
+            <tr class="linha">
+                <td> rio grande do sul</td>
+                <td class="numero">11 229 915</td>
+            </tr>
+            <tr>
+                <td> pernambuco</td>
+                <td class="numero">9 539 029</td>
+            </tr>
+            <tr class="linha">
+                <td> ceara</td>
+                <td class="numero">9 233 656</td>
+            </tr>
+            <tr>
+                <td> para</td>
+                <td class="numero">8 664 306</td>
+            </tr>
+            <tr class="linha">
+                <td> santa catarina</td>
+                <td class="numero"> 8 058 447</td>
+            </tr>
+            <tr>
+                <td> goias</td>
+                <td class="numero">7 350 48</td>
+            </tr>
+            <tr class="linha">
+                <td> maranhao</td>
+                <td class="numero">7 010 960</td>
+             </tr>
+             <tr>
+                <td> amazonas</td>
+                <td class="numero">4 281 209</td>
+             </tr>
+             <tr class="linha">
+                <td> paraiba</td>
+                <td class="numero">4 145 040</td>
+             </tr>
+             <tr>
+                <td> espirito santo</td>
+                <td class="numero">4 102 129</td>
+             </tr>
+             <tr class="linha">
+                <td> mato groso</td>
+                <td class="numero">3 836 399</td>
+             </tr>
+             <tr>
+                <td> rio grande do norte</td>
+                <td class="numero">3 446 071</td>
+             </tr>
+             <tr class="linha">
+                <td> piaui</td>
+                <td class="numero">3 220 104</td>
+             </tr>
+             <tr>
+                <td> alagoas</td>
+                <td class="numero">2 982 815</td>
+             </tr>
+             <tr class="linha">
+                <td> distrito federal</td>
+                <td class="numero">2 901 895</td>
+             </tr>
+             <tr>
+                <td> mato groso do sul</td>
+                <td class="numero">2 291 077</td>
+             </tr>
+             <tr class="linha">
+                <td>sergipe</td>
+                <td class="numero">2 291 077</td>
+             </tr>
+             <tr>
+                <td>rondonia</td>
+                <td class="numero">1 746 227</td>
+             </tr>
+             <tr class="linha">
+                <td>tocantins</td>
+                <td class="numero">1 577 342</td>
+             </tr>
+             <tr>
+                <td>acre</td>
+                <td class="numero">880 631</td>
+             </tr>
+             <tr class="linha">
+                <td> amapa</td>
+                <td class="numero">802 837</td>
+             </tr>
+             <tr>
+                <td> roraima</td>
+                <td class="numero">716 793</td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                 <th scope="row">total de habitantes</th>
+                 <td class="numero"><strong>212 583 720</strong></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>

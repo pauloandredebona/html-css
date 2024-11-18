@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.cgrupo {
+            background-color: red;
+        }
+
+        col.cprof {
+            background-color: yellow;
+        }
+</style>
+</head>
+<body>
+    <h1>exercio de tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>documentos</caption>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profisao</th>
+        </tr>
+        <tr>
+            <td scope="col">nome</td>
+            <td scope="col">sexo</td>
+            <td scope="col">idade</td>
+            <td scope="col">profisao</td>
+        </tr>
+        <tr>
+            <td scope="col">nome</td>
+            <td scope="col">sexo</td>
+            <td scope="col">idade</td>
+            <td scope="col">profisao</td>
+        </tr>
+        <tr>
+            <td scope="col">nome</td>
+            <td scope="col">sexo</td>
+            <td scope="col">idade</td>
+            <td scope="col">profisao</td>
+        </tr>
+        <tr>
+            <td scope="col">nome</td>
+            <td scope="col">sexo</td>
+            <td scope="col">idade</td>
+            <td scope="col">profisao</td>
+        </tr>
+        <tr>
+            <td scope="col">nome</td>
+            <td scope="col">sexo</td>
+            <td scope="col">idade</td>
+            <td scope="col">profisao</td>
+        </tr>
+    </table>
+</body>
+</html>

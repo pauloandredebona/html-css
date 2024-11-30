@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadrast.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">usuario</label>
+            <input type="text" name="usu" id="iusu" required minlength="1"
+            maxlength="100" placeholder="nome de usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="1"
+            maxlength="100" placeholder="coloque sua senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

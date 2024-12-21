@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iano">em qual ano vocce nasceu</label>
+            <input type="number" name="ano" id="inao" min="1800" max="2025" oninput="calcidade">
+        </p>
+        <p>
+            <label for="idade">sua idade e</label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcidade {
+            let atual = new Date().getFullYear()
+            iidadee.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

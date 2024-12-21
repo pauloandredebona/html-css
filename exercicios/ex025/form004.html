@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" autocapitalize="on">
+        <fieldset> 
+            <legend>dados pessoal</legend>
+    
+            <p>
+                <label for="inome">nome</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="20">
+            </p>
+            <p>
+                <label for="imail">e-mail</label>
+                <input type="email" name="email" id="imail" required>
+            </p>
+            <p>
+                <label for="itel">telefonee</label>
+                <input type="text" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
+        <p>
+                <input type="submit" value="eenviar">
+                <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

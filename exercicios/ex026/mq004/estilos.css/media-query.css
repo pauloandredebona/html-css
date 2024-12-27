@@ -1,0 +1,63 @@
+@charset "UTF-8" ;
+
+@media print {
+     body {
+        background-image: url(../imagens/back-print.jpg);
+     }
+
+     main {
+        border: 2px solid black;
+     }
+
+     main::after {
+        content: 'Essa impressao  foi feita atraves do site file:///C:/Users/Paulo%20Andr%C3%A9/Documents/estudos/html-css/exercicios/ex026/mq004/index.html';
+        text-decoration: overline;
+     }
+
+     main, h1 {
+        text-shadow: none;
+        color: black;
+     }
+
+    img#celular { display: none;}
+    img#tv { display: none;}
+    img#pc { display: none;}
+    img#printe { display: block;}
+    img#tablete { display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#celular { display: none;}
+    img#tv { display: none;}
+    img#pc { display: none;}
+    img#printe { display: none;}
+    img#tablete { display: block;}
+}
+
+@media screen and (min-width : 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#celular { display: none;}
+    img#tv { display: none;}
+    img#pc { display: block;}
+    img#printe { display: none;}
+    img#tablete { display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg)
+    }
+
+    img#celular { display: none;}
+    img#tv { display: block;}
+    img#pc { display: none;}
+    img#printe { display: none;}
+    img#tablete { display: none;}
+}

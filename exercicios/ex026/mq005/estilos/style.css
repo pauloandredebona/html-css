@@ -1,4 +1,4 @@
-@charset "utf-8"; 
+@charset "UTF-8"; 
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +29,7 @@ i#burger:hover {
 
 menu {
     display: none;
+    transition: display 0.3s ease-in-out; /* Added transition */
 }
 
 menu > ul {

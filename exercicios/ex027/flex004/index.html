@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+* {
+    justify-content: center;
+    align-items: center;
+}
+
+div.conteiner1{
+background-color: lightsalmon;
+display: flex;
+flex-flow: row nowrap;
+width: 800px;
+height: 400px;
+justify-content: space-around;
+}
+
+div.conteiner2{
+background-color: lightsalmon;
+display: flex;
+width: 800px;
+height: 400px;
+flex-flow: row-reverse nowrap;
+justify-content: space-between;
+}
+
+div.conteiner3{
+width: 800px;
+height: 400px;
+background-color: lightsalmon;
+display: flex;
+flex-flow: row-reverse nowrap;
+justify-content: space-evenly ;
+}
+
+div.item {
+background-color: lightskyblue;
+border: 1px solid black;
+text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="conteiner1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="conteiner2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="conteiner3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html> 
